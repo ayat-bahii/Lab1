@@ -1,14 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--
+git config --global user.name "Ayat Bahii"
+git config --global user.email "ayat.bahii.ashour@gmail.com"
+git config --global init.defaultBranch main
+git config --global core.editor "code --wait"
+git config --list
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+git init
+git add .
+git commit -m "First Commit" 
+git status
 
-<body>
+ssh-keygen -t ed25519 -C "ayat.bahii.ashour@gmail.com"
+cat ~/.ssh/id_ed25519.pub
+ssh -T git@github.com
 
-</body>
+git remote add origin git@github.com:ayat-bahii/Lab1.git
+git push -u origin main
 
-</html>
+git add .  
+git commit -m "-MY CV-"
+
+git commit --amend -am "Change Name"
+
+git commit  -am "Skill: bad skill"
+
+git reset --hard HEAD^
+
+git push
+
+-->
